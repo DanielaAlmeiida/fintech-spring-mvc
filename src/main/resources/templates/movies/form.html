@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{template.html}">
+<head>
+    <title>Movie Registration</title>
+</head>
+<body>
+
+    <div layout:fragment="content">
+        <h1>Movie Registration</h1>
+        <form method="post" action="/movies">
+
+            <input type="hidden" name="_method" value="put" th:if="${movie != null}">
+            <input type="hidden" name="id" th:value="${movie?.id}"> <!-- ? if, desconsidera o id -->
+
+            <div>
+                <label for="name">Name: </label>
+                <input id="name" name="name" th:value="${movie?.name}">
+            </div>
+
+            <div>
+                <label for="duration">Duration (in minutes): </label>
+                <input id="duration" name="duration" th:value="${movie?.durationInMinutes}">
+            </div>
+
+            <div>
+                <label for="year">Release year: </label>
+                <input id="year" name="year" th:value="${movie?.releaseYear}">
+            </div>
+
+            <div>
+                <label for="genre">Genre: </label>
+                <input id="genre" name="genre" th:value="${movie?.genre}">
+            </div>
+
+            <input type="submit" value="register">
+        </form>
+    </div>
+
+</body>
+</html>
