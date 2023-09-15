@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR"
+      xmlns:th="http://thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{template.html}">
+<head>
+    <title>Inserir Gasto</title>
+</head>
+<body>
+
+    <div layout:fragment="content">
+        <h1>Inserir Gasto</h1>
+        <form method="post" action="/gastos">
+
+            <input type="hidden" name="_method" value="put" th:if="${gasto != null}">
+            <input type="hidden" name="id" th:value="${gasto?.id}"> <!-- ? if, desconsidera o id -->
+
+            <div>
+                <label for="valor">Valor: </label>
+                <input id="valor" name="valor" th:value="${gasto?.valor}">
+            </div>
+
+            <div>
+                <label for="descricao">Descrição: </label>
+                <input id="descricao" name="descricao" th:value="${gasto?.descricao}">
+            </div>
+
+            <input type="submit" value="inserir">
+        </form>
+    </div>
+
+</body>
+</html>

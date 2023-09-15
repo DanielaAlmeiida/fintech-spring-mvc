@@ -1,13 +1,13 @@
-package br.com.alura.screenmatch;
+package br.com.fintech;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ScreenmatchApplication {
+public class FintechApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ScreenmatchApplication.class, args);
+		SpringApplication.run(FintechApplication.class, args);
 	}
 
 }
