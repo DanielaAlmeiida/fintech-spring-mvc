@@ -5,26 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08575291-1395-4d16-ba30-0b43a546f9df" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/fintech/controller/GastoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/fintech/model/Gasto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/fintech/model/dto/GastoRegisterData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/fintech/model/dto/GastoUpdateData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/fintech/repository/GastoRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/gastos/list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/alura/screenmatch/ScreenmatchApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/fintech/FintechApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/alura/screenmatch/controller/MovieController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/alura/screenmatch/domain/movie/Movie.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/alura/screenmatch/domain/movie/MovieRegisterData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/alura/screenmatch/domain/movie/MovieRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/alura/screenmatch/domain/movie/MovieUpdateData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/movies/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/gastos/form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/movies/list.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/template.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/alura/screenmatch/ScreenmatchApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/fintech/ScreenmatchApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/fintech/model/Gasto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/fintech/model/Gasto.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
