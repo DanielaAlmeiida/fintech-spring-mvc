@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR"
+      xmlns:th="http://thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{index-template.html}"> <!-- Como se fosse o extends da POO-->
+<head>
+  <!-- Bootstrap CSS via CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+  <!-- Bootstrap JavaScript via CDN (opcional) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="../static/css/index.css" th:href="@{/css/index.css}">
+  <title>Fintech</title>
+</head>
+<body>
+
+  <div layout:fragment="index-content">
+    <main class="main-section">
+      <section class="main-text">
+        <h1 class="title">Organize suas finanças</h1>
+        <p class="subtitle">Nesta aplicação você conseguirá ter controle sobre as suas finanças.</p>
+        <a class="btn-login" th:href="@{/login}">Comece já!</a>
+      </section>
+      <section>
+        <img th:src="@{/images/phone.png}" alt="Imagem de um celular e uma cédula." />
+      </section>
+    </main>
+
+    <section class="first-section">
+      <div>
+        <h2>Recursos</h2>
+      </div>
+      <div class="resources">
+        <div class="resource">
+          <h3>Recurso 1</h3>
+          <p>Uma explicação clara e convincente da oferta ou benefício que você está promovendo.</p>
+          <img class="img-coin" th:src="@{/images/coin.png}" alt="Imagem de uma moeda." />
+        </div>
+        <div class="resource">
+          <h3>Recurso 2</h3>
+          <p>Uma explicação clara e convincente da oferta ou benefício que você está promovendo.</p>
+          <img class="img-coin" th:src="@{/images/coin.png}" alt="Imagem de uma moeda." />
+        </div>
+        <div class="resource">
+          <h3>Recurso 3</h3>
+          <p>Uma explicação clara e convincente da oferta ou benefício que você está promovendo.</p>
+          <img class="img-coin" th:src="@{/images/coin.png}" alt="Imagem de uma moeda." />
+        </div>
+      </div>
+    </section>
+
+    <section  class="second-section">
+      <div>
+        <h2>Sobre</h2>
+        <p>Uma explicação clara e convincente da oferta ou benefício que você está promovendo.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec nibh convallis ex laoreet
+          tristique. Morbi mattis nisl ac nulla interdum, non venenatis neque vulputate. Donec vitae
+          enim libero. Phasellus non ligula at lorem feugiat pharetra. Nullam est libero, venenatis
+          mattis diam sed, semper elementum ante. </p>
+      </div>
+      <div>
+        <img class="img-coin" th:src="@{/images/coin.png}" alt="Imagem de uma moeda." />
+      </div>
+    </section>
+
+    <section class="third-section">
+        <div>
+          <h2>Contato</h2>
+          <img class="img-coin" th:src="@{/images/coin.png}" alt="Imagem de uma moeda." />
+        </div>
+        <form action="process.php" method="post">
+          <label for="email">Insira seu endereço de e-mail:</label>
+          <input type="email" id="email" name="email" required>
+          <button class="btn-contact" type="submit">Enviar contato</button>
+        </form>
+    </section>
+  </div>
+
+</body>
+</html>

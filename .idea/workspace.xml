@@ -5,21 +5,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08575291-1395-4d16-ba30-0b43a546f9df" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/fintech/controller/IndexController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/fintech/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/fintech/model/Usuario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/fintech/repository/UsuarioRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/all.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/indexTemplate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/nav.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/coin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/phone.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index-template.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/nav.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/receitas/list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/fintech/FintechApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/fintech/FintechApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/fintech/controller/GastoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/fintech/controller/GastoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/fintech/model/Gasto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/fintech/model/Gasto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/fintech/repository/GastoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/fintech/repository/GastoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/gastos/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/gastos/list.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="C:\Users\User\projects-intellij\spring-boot-mvc-fintech\htmlReport" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Record" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -34,19 +57,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/User/projects-intellij/spring-boot-mvc-fintech",
-    "onboarding.tips.debug.path": "C:/Users/User/Downloads/movie-list-screenmatch/src/main/java/org/example/Main.java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/projects-intellij/spring-boot-mvc-fintech/src/main/resources/templates&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/User/Downloads/movie-list-screenmatch/src/main/java/org/example/Main.java&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\projects-intellij\spring-boot-mvc-fintech\src\main\resources\templates" />
       <recent name="C:\Users\User\projects-intellij\spring-boot-mvc-movie-list\src\main\resources\templates\gastos" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\projects-intellij\spring-boot-mvc-fintech\src\main\resources\static\images" />
+      <recent name="C:\Users\User\projects-intellij\spring-boot-mvc-fintech\src\main\resources\images" />
+      <recent name="C:\Users\User\projects-intellij\spring-boot-mvc-fintech\src\main\resources\templates" />
     </key>
   </component>
   <component name="RunManager">
@@ -95,5 +126,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/spring_boot_mvc_fintech$FintechApplication.ic" NAME="FintechApplication Coverage Results" MODIFIED="1694748465299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>br.com.fintech.*</FILTER>
+    </SUITE>
   </component>
 </project>

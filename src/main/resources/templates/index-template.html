@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/css/index.css" th:href="@{/css/all.css}">
+    <link rel="stylesheet" href="../static/css/index.css" th:href="@{/css/indexTemplate.css}">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">FINTECH</a></li>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Recursos</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a th:href="@{/login}">Log in</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div layout:fragment="index-content">
+
+    </div>
+
+    <footer>
+        <div class="footer-about">
+            <p>Setembro de 2023. Fintech.</p>
+        </div>
+        <div class="footer-icons">
+            <a href="#" class="btn btn-link"><span class="bi bi-facebook"></span></a>
+            <a href="#" class="btn btn-link"><span class="bi bi-twitter"></span></a>
+            <a href="#" class="btn btn-link"><span class="bi bi-instagram"></span></a>
+        </div>
+
+        <!-- CREDITS
+        Illustration by  <a href="https://icons8.com/illustrations/author/zD2oqC8lLBBA"> Icons 8 </a>
+        from  <a href="https://icons8.com/illustrations">Ouch!</a>
+
+        Illustration by <a href="https://icons8.com/illustrations/author/GrbQqWBEhaDS">Liam Moore</a>
+        from <a href="https://icons8.com/illustrations">Ouch!</a>
+        -->
+    </footer>
+</body>
+</html>

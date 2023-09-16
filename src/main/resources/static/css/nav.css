@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+ /* Estilo para a barra de navegação lateral */
+.sidebar {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 250px;
+    background-color: #344259;
+}
+
+/* Estilo para os itens da barra de navegação */
+.sidebar a {
+    padding: 15px 25px;
+    font-size: 18px;
+    color: white;
+}
+
+.sidebar a:hover {
+    background-color: #555;
+}

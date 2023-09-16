@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR"
+      xmlns:th="http://thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../static/css/nav.css" th:href="@{/css/nav.css}">
+</head>
+<body>
+
+  <nav class="sidebar">
+    <h1>Fintech</h1>
+    <p>Olá, Nome do Usuário</p>
+    <a href="#">Início</a>
+    <a href="#">Gastos</a>
+    <a href="#">Receitas</a>
+    <a href="#">Metas</a>
+    <a href="#">Investimentos</a>
+  </nav>
+
+  <div layout:fragment="spa-content">
+
+  </div>
+
+</body>
+</html>

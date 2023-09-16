@@ -20,6 +20,10 @@ public class Gasto {
     private Long valor;
     private String descricao;
 
+    @ManyToOne
+    @JoinColumn(name = "id_usuario")
+    private Usuario usuario;
+
 
     //Register
     public Gasto(GastoRegisterData data) {

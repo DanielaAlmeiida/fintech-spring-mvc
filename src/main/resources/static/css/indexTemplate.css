@@ -1,0 +1,67 @@
+/* Estilizando o cabeçalho */
+header {
+  padding: 20px;
+  font-weight: 200;
+}
+
+header, main, .second-section, footer {
+  background-color: #344259; /* Cor de fundo */
+  color: #fff;
+  padding: 30px;
+}
+
+.first-section, .third-section{
+    background-color: #d5daed;
+    color: #495278;
+}
+
+/* Estilizando a navegação */
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-start: end;
+    flex-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 65px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+    font-weight: bold;
+
+}
+
+nav ul li:last-child {
+    border: 1px solid white;
+    border-radius: 6px;
+    padding: 8px;
+    width: 90px;
+    text-align: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+/* Estilizando o rodapé */
+footer {
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-about p {
+  font-size: 14px;
+}
+
+.footer-icons a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+  margin-left: 10px;
+}

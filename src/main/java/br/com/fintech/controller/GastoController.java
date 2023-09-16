@@ -5,10 +5,14 @@ import br.com.fintech.model.dto.GastoRegisterData;
 import br.com.fintech.model.dto.GastoUpdateData;
 import br.com.fintech.repository.GastoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+//import org.springframework.security.core.Authentication;
+//import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @Controller
 @RequestMapping("/gastos")
@@ -17,15 +21,15 @@ public class GastoController {
     @Autowired
     private GastoRepository repository;
 
-    // ( 1 ) LISTAR
+
+    //1 - LISTAR
     @GetMapping
     public String loadListPage(Model model) {
         model.addAttribute("gastos", repository.findAll());
         return "gastos/list";
     }
 
-    // ( 2 ) REGISTRAR
-    //Abre Form tanto para REGISTRAR e EDITAR
+    //Abre Form tanto para 2 - REGISTRAR e 3 - EDITAR
     @GetMapping("/form")
     public String loadFormPage(Long id, Model model) {
         if(id != null) {
@@ -35,7 +39,7 @@ public class GastoController {
         return "gastos/form";
     }
 
-    //Insert Gasto
+    //2 - REGISTRAR
     @PostMapping
     @Transactional
     public String insertNewGasto(GastoRegisterData data) {
@@ -44,7 +48,7 @@ public class GastoController {
         return "redirect:/gastos";
     }
 
-    // ( 3 ) EDITAR
+    //3 - EDITAR
     @PutMapping
     @Transactional //Transaction with database
     public String updateGasto(GastoUpdateData data) {
@@ -53,7 +57,7 @@ public class GastoController {
         return "redirect:/gastos";
     }
 
-    // ( 4 ) DELETAR
+    //4 - DELETAR
     @DeleteMapping
     @Transactional
     public String deleteGasto(Long id) {

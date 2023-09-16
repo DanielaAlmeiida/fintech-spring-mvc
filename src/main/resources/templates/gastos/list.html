@@ -2,46 +2,48 @@
 <html lang="pt-BR"
       xmlns:th="http://thymeleaf.org"
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-      layout:decorate="~{template.html}"> <!-- Como se fosse o extends da POO-->
+      layout:decorate="~{nav.html}"
+> <!-- Como se fosse o extends da POO-->
 <head>
     <title>Lista de Gastos</title>
 </head>
 <body>
-<div layout:fragment="content">
-    <h1>Lista de Gastos</h1>
 
-    <a href="/gastos/form">Novo gasto</a>
+    <div layout:fragment="spa-content">
+        <h1>Lista de Gastos</h1>
 
-    <table>
-        <thead>
-        <tr>
-            <th>Valor</th>
-            <th>Descrição</th>
-            <th>Editar</th>
-            <th>Excluir</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr th:each="gasto : ${gastos}">
-            <td th:text="${gasto.valor}"></td>
-            <td th:text="${gasto.descricao}"></td>
+        <a href="/gastos/form">Novo gasto</a>
 
-            <td>
-                <a th:href="@{/gastos/form?id={id}(id=${gasto.id})}">Editar</a>
-            </td>
+        <table>
+            <thead>
+            <tr>
+                <th>Valor</th>
+                <th>Descrição</th>
+                <th>Editar</th>
+                <th>Excluir</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="gasto : ${gastos}">
+                <td th:text="${gasto.valor}"></td>
+                <td th:text="${gasto.descricao}"></td>
 
-            <td>
-                <form action="/gastos" method="post">
-                    <input type="hidden" name="id" th:value="${gasto.id}">
-                    <input type="hidden" name="_method" value="delete">
-                    <input type="submit" value="Excluir">
-                </form>
-            </td>
+                <td>
+                    <a th:href="@{/gastos/form?id={id}(id=${gasto.id})}">Editar</a>
+                </td>
 
-            </td>
-        </tr>
-        </tbody>
-    </table>
-</div>
+                <td>
+                    <form action="/gastos" method="post">
+                        <input type="hidden" name="id" th:value="${gasto.id}">
+                        <input type="hidden" name="_method" value="delete">
+                        <input type="submit" value="Excluir">
+                    </form>
+                </td>
+
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
